@@ -346,32 +346,173 @@
 
 
 
+
+# ------------------------------------------------------------- #
+
+
 # 4.4
 
 
-###
-# Prints the name of university where you are studying
-# with an extra space between characters (add a space between
-# each character), e.g.
-# 'book' -> 'b o o k'
-#
-university = 'Krakow University of Economics'
-university_expanded = ''
+# ###
+# # Prints the name of university where you are studying
+# # with an extra space between characters (add a space between
+# # each character), e.g.
+# # 'book' -> 'b o o k'
+# #
+# university = 'Krakow University of Economics'
+# university_expanded = ''
 
-for char in university:
-    university_expanded = university_expanded + char + ' '
+# for char in university:
+#     university_expanded = university_expanded + char + ' '
     
     
     
-print(university)
-print(university_expanded)
+# print(university)
+# print(university_expanded)
 
-# print(university) # original university name
-# print(university_expanded) # expanded university name
-
-
+# # print(university) # original university name
+# # print(university_expanded) # expanded university name
 
 
+# ------------------------------------------------------------- #
+
+# 4.5
+
+# ###
+# # Encrypts text using Caesar Code, shifting each letter
+# # in the alphabet right one position
+# #
+# plain_text = 'The zzzearly bird catches the worm'
+# encrypted_text = ''
+
+# for char in plain_text:
+#     # read the character's code (use ord())
+#     kod_znaku = ord(char)
+#     # add one to the character's code
+#     nowy_kod = (kod_znaku + 1)
+#     # replace new character code with its
+#     # corresponding character (use chr())
+    
+#     if nowy_kod >=123:
+#         nowy_kod = 97
+    
+#     nowy_znak = chr(nowy_kod)
+#     # add encrypted character to encrypted text
+#     encrypted_text += nowy_znak
+
+# print("oryginalny tekst: " + plain_text)
+# print("zaszyfrowany tekst: " + encrypted_text )
+
+
+
+# ------------------------------------------------------------- #
+
+
+# 4.6
+
+
+# ###
+# # Calculates the sum of integer numbers in the range <1,5>
+# #
+# sum = 0
+
+# for i in range(5,11):
+#     sum += i 
+
+# print(f'Sum is {sum}')
+
+
+
+# ------------------------------------------------------------- #
+
+
+
+# 4.7
+
+# ###
+# # Calculates the sum of even numbers in the range <1,10>
+# #
+# sum = 0
+
+# for i in range(1,11):
+#     if not i%2 ==0:
+#         continue
+#     sum += i
+
+# print(f'Sum of even numbers in the range <1,10> is {sum}')
+
+
+
+
+# ------------------------------------------------------------- #
+
+# 4.8
+
+# ###
+# # Calculates values for the following fractions: 1/2, 1/3, ..., 1/10
+# #
+
+# for i in range(1,11):
+#     print(f'1/{i} = {1/i}')
+
+
+
+
+# ------------------------------------------------------------- #
+
+
+
+
+
+
+
+# 5.
+
+
+# ###
+# # A simple number guessing game
+# #
+# import random
+
+# # Randomly chosen number to be guessed from 1 to 100
+# number_to_guess = random.randint(1, 100)
+# user_guess = 0
+
+# print("Guess the number between 1 and 100!")
+
+# while user_guess != number_to_guess:
+#     user_guess = int(input("Enter your guess: "))
+
+#     if user_guess < number_to_guess:
+#         print("Too low! Try again.")
+#     elif user_guess > number_to_guess:
+#         print("Too high! Try again.")
+#     else:
+#         print("Congratulations! You guessed the correct number.")
+
+
+
+# ------------------------------------------------------------- #
+
+# 5.6
+
+
+
+# ###
+# # Calculates the sum of even numbers from 1 to a given number N
+# #
+
+# N = 10
+# sum_even = 0
+# i = 1
+
+# # Calculate the sum of even numbers
+# while i <= N:
+#     if i % 2 == 0:
+#         sum_even += i
+#     i += 1
+
+# print(f"The sum of even numbers from 1 to {N} is: {sum_even}")
 
 
 
