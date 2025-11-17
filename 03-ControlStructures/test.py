@@ -378,30 +378,30 @@
 
 # 4.5
 
-# ###
-# # Encrypts text using Caesar Code, shifting each letter
-# # in the alphabet right one position
-# #
-# plain_text = 'The zzzearly bird catches the worm'
-# encrypted_text = ''
+###
+# Encrypts text using Caesar Code, shifting each letter
+# in the alphabet right one position
+#
+plain_text = 'The zzzearly bird catches the worm'
+encrypted_text = ''
 
-# for char in plain_text:
-#     # read the character's code (use ord())
-#     kod_znaku = ord(char)
-#     # add one to the character's code
-#     nowy_kod = (kod_znaku + 1)
-#     # replace new character code with its
-#     # corresponding character (use chr())
-    
-#     if nowy_kod >=123:
-#         nowy_kod = 97
-    
-#     nowy_znak = chr(nowy_kod)
-#     # add encrypted character to encrypted text
-#     encrypted_text += nowy_znak
+for char in plain_text:
+    # czyta litera i zamienia na liczbe w ascii
+    kod_znaku = ord(char)
+    # wedlug kodu cesara dodajemy jeden czyli nastepna litere
+    nowy_kod = (kod_znaku + 1)
+    # czyta liczba i dodaje 1 
 
-# print("oryginalny tekst: " + plain_text)
-# print("zaszyfrowany tekst: " + encrypted_text )
+    
+    if nowy_kod >=123: #gdy osiagniemy ostatnia litery czyli z wracamy do a
+        nowy_kod = 97
+    
+    nowy_znak = chr(nowy_kod)
+    # zamienia ciag na litery
+    encrypted_text += nowy_znak
+
+print("oryginalny tekst: " + plain_text)
+print("zaszyfrowany tekst: " + encrypted_text )
 
 
 
@@ -452,8 +452,8 @@
 # # Calculates values for the following fractions: 1/2, 1/3, ..., 1/10
 # #
 
-# for i in range(1,11):
-#     print(f'1/{i} = {1/i}')
+for i in range(1,11):
+    print(f'1/{i} = {1/i}')
 
 
 
@@ -498,21 +498,21 @@
 
 
 
-# ###
-# # Calculates the sum of even numbers from 1 to a given number N
-# #
+###
+# Calculates the sum of even numbers from 1 to a given number N
+#
 
-# N = 10
-# sum_even = 0
-# i = 1
+N = 10
+sum_even = 0
+i = 1
 
-# # Calculate the sum of even numbers
-# while i <= N:
-#     if i % 2 == 0:
-#         sum_even += i
-#     i += 1
+# Calculate the sum of even numbers
+while i <= N:
+    if i % 2 == 0:
+        sum_even += i
+    i += 1
 
-# print(f"The sum of even numbers from 1 to {N} is: {sum_even}")
+print(f"The sum of even numbers from 1 to {N} is: {sum_even}")
 
 
 
