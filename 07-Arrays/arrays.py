@@ -211,16 +211,65 @@
 
 # print(matrix2)
 
+#1.15 bubble sort
+
+
+###
+# Bubble sort
+#
+
+# def bubble_sort(array):
+
+#     def swap(array, idx1, idx2):
+#         array[idx1], array[idx2] = array[idx2], array[idx1]
+
+#     n = len(array)
+    
+    
+#     for i in range (n-1):
+#         for j in range (n-i-1):
+#             if array[j] > array[j + 1]:
+#                 swap(array,j,j+1)
+#     return array
+
+# car_fuel_consumption = [7.2, 6.8, 7.5, 7.0, 7.1, 6.9, 7.3]
+# print(car_fuel_consumption)
+# sorted_car_fuel_consumption = bubble_sort(car_fuel_consumption) 
+# print(sorted_car_fuel_consumption)
+
+# print()
+
+# bank_transactions = [-150, -20, 300, -45, -60, 500, -120]
+# print(bank_transactions)
+# sorted_bank_transactions = bubble_sort(bank_transactions)
+# print (sorted_bank_transactions)
+
+
+# 1.16
+
+# Sort the data from lowest to highest value
+distances_traveled = [120, 150, 180, 90, 200, 175, 160]
+print(sorted(distances_traveled))
+# Sort the data in descending order, from highest to lowest value
+daily_temperatures = [16, 17, 15, 14, 18, 19, 17, 15, 16, 18]
+print(sorted(daily_temperatures, reverse=True))
+# Sort the data in ascending order
+
+file_names = ["report.docx", "presentation.pptx", "data.csv", "photo.jpg", "notes.txt",
+   "invoice.pdf", "resume.docx", "budget.xlsx", "meeting.mp4", "schedule.pdf"]
+print(sorted((file_names)))
+
+
 
 # 3. Practice makes perfect
 
-numbers = [34,7,19,4,21,8]
+# numbers = [34,7,19,4,21,8]
 
-suma = 0
-i = 0
-while i < len(numbers):
-    if numbers[i] % 2 == 0:
-        suma += numbers[i]
-    i += 1
+# suma = 0
+# i = 0
+# while i < len(numbers):
+#     if numbers[i] % 2 == 0:
+#         suma += numbers[i]
+#     i += 1
 
-print(suma)
+# print(suma)
