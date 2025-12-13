@@ -1,0 +1,2 @@
+Dwuwymiarowa tablica zawiera taką samą liczbę wierszy i kolumn. Zdefiniuj funkcję f(array2D), która dla danej dwuwymiarowej tablicy array2D zwraca wartość True, gdy suma wartości w każdym wierszu tablicy jest równa sumie wartości w odpowiadającej jej kolumnie (np. suma wartości w wierszu 3 jest równa sumie
+wartości w kolumnie 3), a False w przeciwnym przypadku. Przykład:
