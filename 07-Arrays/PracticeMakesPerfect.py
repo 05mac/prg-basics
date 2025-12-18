@@ -274,18 +274,344 @@
 # print(my_tuple[0],my_tuple[1][2])
 
 
-
 ##########              PRACTICE MAKES PERFECT               ##########
 
 # 17.
-my_tuple = (50,20,40,50,30,50)
+# my_tuple = (50,20,40,50,30,50)
 
-liczba = int(input("Podaj liczbe: "))
+# liczba = int(input("Podaj liczbe: "))
+# counter = 0
+
+# for i in my_tuple:
+#     if i == liczba:
+#         counter += 1
+# print(f"Number of occurrences: {counter}")
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+
+# import math
+# # 18.
+
+
+# def MyArrays(array):
+
+#     def swap(array, dx1, dx2):
+#         array[dx1], array[dx2] = array[dx2], array[dx1]
+
+#     n = len(array)
+#     for i in range(n-1):
+#         for j in range(n-i-1):
+#             if array[j] > array[j+1]:
+#                 swap(array, j, j+1)
+
+#     druga_naj = array[-2]
+#     roznica = array[-1] - array[0]
+
+#     if n % 2 == 0:
+#         mediana = int(n / 2)
+#         wynik_mediany = (array[mediana-1] + array[mediana]) / 2
+#     else:
+#         mediana = (n // 2)
+#         wynik_mediany = array[mediana]
+
+#     print(array)
+#     print(druga_naj)
+#     print(wynik_mediany)
+#     print(array[0],array[-1])
+
+
+# if __name__ == "__main__":
+#     array = [7, 3, 8, 5, 2]
+# print(MyArrays(array))
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+# # 19.
+
+# liczba = float(input("Podaj liczbe: "))
+# array = [-2,-1,2,5,6]
+
+# licznik = 0
+# for element in array:
+#     if liczba < element:
+#         licznik += 1
+# print(licznik)
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+
+# 20.
+
+# arr = [2,3,4,5,6,7,8,9,10,12,13,13,25]
+# licznik = 0
+# for index,value in enumerate(arr):
+#     if value % 2 == 0:
+#         arr[index],arr[licznik] = arr[licznik],arr[index]
+#         licznik += 1
+# print (arr)
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+#  # 21.
+
+# arr2 = [1,2,3,4,5,6]
+# arr1 = [1,2,3]
+
+# set1 = set(arr1)
+# set2 = set(arr2)
+
+
+# z = set1.issubset(set2)
+# print(z)
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+
+# # 22.
+# import random
+# def rand_elem(array):
+#     n = len(array)
+#     losowa_liczba = random.randrange(n)
+#     return(array[losowa_liczba])
+# print((rand_elem([2,1,3,2,4,5])))
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+
+# 23.
+
+# t = "An apple a day keeps the doctor away"
+
+# def MyText(t):
+#     words = t.split()
+#     number_Words = len(words)
+#     LongToShort = sorted(words, key=len)
+#     alphabetically = sorted(words, key=str.lower)
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+# 28.
+
+
+# arr = [
+#         [7,3,7,9,0],
+#         [2,9,0,1,5],
+#         [3,8,6,4,7],
+#         [8,7,1,1,5]
+#        ]
+
+# # kolumna = [sum(kolumna) for kolumna in zip(*arr)]
+# # print(kolumna[4])
+
+# suma_kolumny = 0
+# for i in arr:
+#     suma_kolumny += i[4]
+
+# print(suma_kolumny)
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+# 29.
+
+# def create_2d_arr(x,y):
+#     tablica = []
+
+#     for i in range(x):
+#         dodatkowa_tablica = []
+#         for j in range(y):
+#             dodatkowa_tablica.append(0)
+
+#         tablica.append(dodatkowa_tablica)
+
+#     return tablica
+
+
+# print(create_2d_arr(3,5))
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+
+# 30.
+
+# array = [[0, 0, 0, 0, 0], # 1
+#          [0, 0, 0, 0, 0], # 2
+#          [0, 0, 0, 0, 0], # 3
+#          [0, 0, 0, 0, 0], # 4
+#          [0, 0, 0, 0, 0]] # 5
+
+# n = len(array)
+
+# for i in range(n):
+#     for j in range(n):
+#         array[i][j] = (j + 1)* (i+1)
+
+# for element in array:
+#     print(element)
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+# 31.
+
+# array = [   [-38, 19],
+#             [5,40],
+#             [-7,11],
+#             [29,16]
+#             ]
+
+# n = len(array)
+# najwieksza = array[0][0]
+# najmniejsza = array[0][0]
+
+# row_max, col_max = 0,0
+# row_min, col_min = 0,0
+
+# for indexWiersz, valueWiersz in enumerate(array):
+#     for indexKolumna, valueKolumna in enumerate(valueWiersz):
+#         if valueKolumna > najwieksza:
+#             najwieksza = valueKolumna
+#             row_max = indexWiersz
+#             col_max = indexKolumna
+
+#         if valueKolumna < najmniejsza:
+#             najmniejsza = valueKolumna
+#             row_min = indexWiersz
+#             col_min = indexKolumna
+
+
+# print(f"najwieksza wartosc to: {najwieksza} oraz ma indeks {row_max,col_max}")
+# print(f"Natomiast wartosc najmniejsza to {najmniejsza} oraz ma indeks {row_min, col_min}")
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+
+# for row in array:
+#     for column in row:
+#         if column > najwieksza:
+#             najwieksza = column
+
+#         if column < najmniejsza:
+#             najmniejsza = column
+
+
+# print(najwieksza,",",najmniejsza)
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+# 32.
+
+# array = [
+#     [6, 6, 6, 6, 6],
+#     [5, 5, 5, 5, 5],
+#     [4, 4, 4, 4, 4],
+# ]
+# n = len(array)
+# # print(f"Przed zamiana ")
+# print(f"Matirx przed zmiana: {array}")
+# array[0],array[-1] = array[-1],array[0]
+
+# print(f"Matrix po zmianie: {array}")
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+
+# 33.
+
+# array = [
+#     [3, 6, 6, 6, 7],
+#     [2, 5, 5, 5, 7],
+#     [1, 4, 4, 4, 7],
+# ]
+
+
+# n = len(array)
+
+# counter = 0
+# for i in range(n):
+#     array[i][-1],array[i][0] = array[i][0],array[i][-1]
+# print(array)
+
+# for element in array:
+#     print(element)
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+
+# # 34.
+
+# def identity_matrix(n):
+
+#     tablica = []
+#     for i in range(n):
+#         tablica_pomocnicza = []
+#         for j in range(n):
+#             if i == j:
+#                 tablica_pomocnicza.append(1)
+#             else:
+#                 tablica_pomocnicza.append(0)
+#         tablica.append(tablica_pomocnicza)
+
+
+#     return tablica
+
+
+# for element in (identity_matrix(5)):
+#     print(element)
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+# 35.
+
+array = [[1,2,3,4,5],
+[6, 7, 8, 9, 0]  ]
+
+
+# array = [[1, 2, 3],
+#          [4, 5, 6],
+#          [7, 8, 9]]
+
+
+# array = [[5,6,7,8]]
+
+n = len(array)
 counter = 0
-
-for i in my_tuple:
-    if i == liczba:
+for row in array:
+    for column in row:
         counter += 1
-print(f"Number of occurrences: {counter}")
+
+liczba_kolumn = (counter//n)
+
+# transpozycja
+
+czysta_tablica = []
+
+for i in range(liczba_kolumn):
+    pomocnicza_tablica = []
+    for j in range(n):
+        pomocnicza_tablica.append(0)
+    czysta_tablica.append(pomocnicza_tablica)
+
+for element in czysta_tablica:
+    print(element)
 
 
+# n = len(array)
+# for i in range(n):
+#     for j in range(i + 1,n):
+#         array[i][j],array[j][i] = array[j][i],array[i][j]
+
+# for element in array:
+#     print(element)
