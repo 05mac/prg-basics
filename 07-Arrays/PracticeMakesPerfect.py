@@ -573,45 +573,56 @@
 
 ##########              PRACTICE MAKES PERFECT               ##########
 
-# 35.
+# # 35. Transpose Matrix
 
-array = [[1,2,3,4,5],
-[6, 7, 8, 9, 0]  ]
+# def transpose_matrix(matrix):
+#     n_rows = len(matrix)
+#     n_cols = len(matrix[0]) # Szybki sposób na kolumny
+    
+#     czysta_tablica = []
+    
+#     # Pętla po kolumnach oryginału (staną się wierszami)
+#     for i in range(n_cols):
+#         pomocnicza_tablica = []
+#         # Pętla po wierszach oryginału (staną się kolumnami)
+#         for j in range(n_rows):
+#             # Twoja świetna logika indeksów j, i
+#             pomocnicza_tablica.append(matrix[j][i]) 
+#         czysta_tablica.append(pomocnicza_tablica)
+        
+#     return czysta_tablica
+
+# # Testy
+# array1 = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 0]]
+# array2 = [[5, 6, 7, 8]]
+
+# def print_2d(matrix):
+#     for row in matrix:
+#         print(" ".join(map(str, row)))
+
+# print("Macierz 1 transponowana:")
+# res1 = transpose_matrix(array1)
+# print_2d(res1)
+
+# print("\nMacierz 2 transponowana:")
+# res2 = transpose_matrix(array2)
+# print_2d(res2)
 
 
-# array = [[1, 2, 3],
-#          [4, 5, 6],
-#          [7, 8, 9]]
 
 
-# array = [[5,6,7,8]]
-
-n = len(array)
-counter = 0
-for row in array:
-    for column in row:
-        counter += 1
-
-liczba_kolumn = (counter//n)
-
-# transpozycja
-
-czysta_tablica = []
-
-for i in range(liczba_kolumn):
-    pomocnicza_tablica = []
-    for j in range(n):
-        pomocnicza_tablica.append(0)
-    czysta_tablica.append(pomocnicza_tablica)
-
-for element in czysta_tablica:
-    print(element)
+##########              PRACTICE MAKES PERFECT               ##########
 
 
-# n = len(array)
-# for i in range(n):
-#     for j in range(i + 1,n):
-#         array[i][j],array[j][i] = array[j][i],array[i][j]
+# 36. 
 
-# for element in array:
-#     print(element)
+# array = [[5,0,3,7,5],[9,0,9,1,2]]
+array = [[2,1],[3,5],[7,4],[2,6]]
+
+nowa_tablica = []
+
+for wiersz in array:
+    nowa_tablica.extend(wiersz)
+    
+print(f"Stara tablica {array}")
+print(f"Nowa tablica {nowa_tablica}")

@@ -154,3 +154,64 @@ import re
 #         return ""
     
 # print(read_content_and_extensions("files.txt"))
+
+
+
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+
+# # 9. 
+# import csv
+
+# with open ("it_company.csv",mode = "r", newline='') as csvfile:
+#     worker_reader = csv.DictReader(csvfile)
+#     for row in worker_reader:
+#             if row["Job Title"] == "Graphic Designer":
+#                 print(f"{row['First Name']} {row['Last Name']},{row['Email']}")
+
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+# 10.
+
+
+# import csv
+
+# with open("clothing.csv", mode = "r", newline='') as csvfile:
+#     clothes = csv.DictReader(csvfile)
+#     for row in clothes:
+#         if float(row['Price']) < 60 and int(row['Stock_Quantity']) < 40:
+#             print(f"{row['Product_Name']}")
+
+
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+
+# # 11.
+
+# # Name of the file to write to
+# file_name = 'numbers_and_powers.txt'
+
+# # Writing movie details to the file
+# with open(file_name, 'w') as file:
+#     for i in range (1,101):
+#        file.write(f"{i},{i*i},{i*i*i}")
+#        file.write("\n")
+
+
+##########              PRACTICE MAKES PERFECT               ##########
+
+# 12. 
+
+import csv
+
+with open("books.csv", mode= "r", newline=" ") as csvfile:
+    books = csv.DictReader(csvfile)
+    for row in books:
+        if row["Genre"] == "Fantasy":
+            books_fantasy.write(row)
