@@ -5,21 +5,41 @@ def f(years, course, average_grade):
         content = json.load(file)
         
         licznik = 0
-        print(content[0]['studies']["courses"])
-
-
-        # for i in content:
-        #     nazwa = i["studies"]["courses"] 
-        #     wiek = i["age"]
-        # #    srednia = sum(i["studies"]["courses"]) / len(i["studies"]["courses"])
-        # #    if nazwa == course and years >= wiek and average_grade >= srednia:
-        # #      licznik += 1
-
-        #     if nazwa == "programming":
-        #         print(i)
 
 
 
+        # SPOSOB 1
+        for i in content:
+            pierwszy_kurs = i["studies"]["courses"][0]
 
+            if pierwszy_kurs["name"] == course:
+                wiek = i["age"]
+                oceny = pierwszy_kurs["grades"]
+    
+                if len(oceny) > 0:
+                    srednia = sum(oceny) / len(oceny)
+
+                    if wiek >= years and srednia >= average_grade:
+                        licznik += 1
+        return licznik
+
+
+
+
+        # SPOSOB 2
+
+
+        # for osoba in content:
+        #     if osoba['age'] >= years:
+        #         for kurs in osoba['studies']["courses"]:
+        #             if kurs["name"] == course:
+        #                 oceny = kurs["grades"]
+        #                 srednia = sum(oceny) / len(oceny)
+
+        #                 if srednia >= average_grade:
+        #                     licznik += 1
+        # return licznik
+
+        
 if __name__ == "__main__":
-    print(f(21, "statistics", 4))
+    print(f(21, "programming", 4))
